@@ -80,16 +80,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "AI Workplace Productivity Assistant" },
+      { title: "Tumie's Collections — AI Admin Studio" },
       {
         name: "description",
         content:
-          "Automate emails, meeting notes, task planning, research, and workplace Q&A with an AI-powered productivity assistant.",
+          "Tumie's Collections admin studio — AI-powered emails, meeting notes, planning and research for a hair, makeup and fashion brand.",
       },
-      { property: "og:title", content: "AI Workplace Productivity Assistant" },
+      { property: "og:title", content: "Tumie's Collections — AI Admin Studio" },
       {
         property: "og:description",
-        content: "An enterprise-grade AI assistant for workplace productivity.",
+        content: "AI-powered admin workspace for Tumie's Collections: hair, makeup and fashion.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
