@@ -11,6 +11,7 @@ import {
   Settings,
   HelpCircle,
 } from "lucide-react";
+import logoUrl from "@/assets/tumies-logo.png";
 import {
   Sidebar,
   SidebarContent,
@@ -48,12 +49,16 @@ export function AppSidebar() {
     <Sidebar collapsible="icon">
       <SidebarHeader className="px-3 py-4">
         <Link to="/" className="flex items-center gap-2">
-          <div className="grid h-9 w-9 shrink-0 place-items-center rounded-xl btn-hero">
-            <Sparkles className="h-5 w-5" />
-          </div>
+          <img
+            src={logoUrl}
+            alt="Tumie's Collections"
+            width={36}
+            height={36}
+            className="h-9 w-9 shrink-0 rounded-xl object-cover shadow-[0_0_20px_-4px_var(--brand-orange)]"
+          />
           <div className="min-w-0 group-data-[collapsible=icon]:hidden">
-            <div className="truncate text-sm font-bold">AI Workplace</div>
-            <div className="truncate text-xs text-muted-foreground">Productivity Assistant</div>
+            <div className="truncate text-sm font-bold tracking-wide">TUMIE'S COLLECTIONS</div>
+            <div className="truncate text-[11px] text-muted-foreground">Hair · Makeup · Fashion</div>
           </div>
         </Link>
       </SidebarHeader>
@@ -95,7 +100,7 @@ export function AppSidebar() {
       </SidebarContent>
       <SidebarFooter className="px-3 py-3 text-[11px] text-muted-foreground group-data-[collapsible=icon]:hidden">
         <div>v1.0.0 · Responsible AI</div>
-        <div className="opacity-70">© AI Workplace</div>
+        <div className="opacity-70">© Tumie's Collections</div>
       </SidebarFooter>
     </Sidebar>
   );

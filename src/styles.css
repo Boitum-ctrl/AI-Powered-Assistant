@@ -34,6 +34,7 @@
   --color-brand-purple: var(--brand-purple);
   --color-brand-blue: var(--brand-blue);
   --color-brand-peach: var(--brand-peach);
+  --color-brand-orange: var(--brand-orange);
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
@@ -51,6 +52,7 @@
   --brand-purple: oklch(0.58 0.22 295);
   --brand-blue: oklch(0.62 0.18 250);
   --brand-peach: oklch(0.86 0.09 55);
+  --brand-orange: oklch(0.72 0.19 45);
 
   --background: oklch(0.99 0.008 320);
   --foreground: oklch(0.18 0.03 285);
@@ -83,11 +85,11 @@
   --sidebar-border: oklch(0.92 0.02 320);
   --sidebar-ring: oklch(0.58 0.22 295);
 
-  --gradient-hero: linear-gradient(135deg, var(--brand-pink), var(--brand-purple) 45%, var(--brand-blue));
+  --gradient-hero: linear-gradient(135deg, var(--brand-orange), var(--brand-pink) 35%, var(--brand-purple) 70%, var(--brand-blue));
   --gradient-soft: linear-gradient(135deg, oklch(0.97 0.03 340), oklch(0.96 0.04 300), oklch(0.96 0.04 250));
-  --gradient-peach: linear-gradient(135deg, var(--brand-peach), var(--brand-pink));
+  --gradient-peach: linear-gradient(135deg, var(--brand-orange), var(--brand-pink));
   --shadow-soft: 0 10px 30px -12px oklch(0.58 0.22 295 / 0.25);
-  --shadow-glow: 0 0 40px -8px oklch(0.78 0.16 350 / 0.45);
+  --shadow-glow: 0 0 40px -8px oklch(0.72 0.19 45 / 0.45);
 }
 
 .dark {

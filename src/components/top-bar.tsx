@@ -1,4 +1,4 @@
-import { Bell, Moon, Sun, Search, User } from "lucide-react";
+import { Bell, Moon, Sun, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { SidebarTrigger } from "@/components/ui/sidebar";
@@ -39,21 +39,6 @@ export function TopBar() {
             <DropdownMenuItem>Welcome to AI Workplace ✨</DropdownMenuItem>
             <DropdownMenuItem>Tip: try the Meeting Notes Summarizer</DropdownMenuItem>
             <DropdownMenuItem>Responsible AI: always review AI outputs</DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="ghost" size="icon" aria-label="Profile">
-              <div className="grid h-7 w-7 place-items-center rounded-full btn-hero">
-                <User className="h-3.5 w-3.5" />
-              </div>
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuLabel>Signed in as Guest</DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>Profile</DropdownMenuItem>
-            <DropdownMenuItem>Preferences</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
