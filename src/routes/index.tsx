@@ -41,12 +41,12 @@ function Dashboard() {
       >
         <div className="absolute inset-0 opacity-30 mix-blend-overlay [background-image:radial-gradient(circle_at_20%_20%,white,transparent_40%),radial-gradient(circle_at_80%_60%,white,transparent_45%)]" />
         <div className="relative">
-          <div className="text-sm uppercase tracking-widest opacity-80">Welcome back</div>
+          <div className="text-sm uppercase tracking-widest opacity-90">Welcome back</div>
           <h1 className="mt-2 max-w-2xl text-3xl font-extrabold sm:text-4xl">
-            Automate your workplace admin with AI
+            Tumie's Collections — your AI-powered admin studio
           </h1>
           <p className="mt-3 max-w-xl text-white/85">
-            Draft emails, summarize meetings, plan your week, and research anything — all in one polished workspace.
+            Draft customer emails, summarize supplier meetings, plan launches and research beauty & fashion trends — all in one captivating workspace for hair, makeup and clothing.
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
             <Button asChild size="lg" variant="secondary" className="bg-white text-brand-purple hover:bg-white/90">
@@ -55,7 +55,7 @@ function Dashboard() {
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20">
-              <Link to="/email">Generate an email</Link>
+              <Link to="/email">Draft a customer email</Link>
             </Button>
           </div>
         </div>
