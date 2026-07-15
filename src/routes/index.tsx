@@ -7,8 +7,8 @@ import { formatDistanceToNow } from "date-fns";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dashboard — AI Workplace Productivity Assistant" },
-      { name: "description", content: "Your productivity overview and quick actions." },
+      { title: "Dashboard — Tumie's Collections" },
+      { name: "description", content: "Admin workspace for Tumie's Collections — hair, makeup and fashion." },
     ],
   }),
   component: Dashboard,
