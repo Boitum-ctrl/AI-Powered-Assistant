@@ -100,7 +100,7 @@ export function AppSidebar() {
       </SidebarContent>
       <SidebarFooter className="px-3 py-3 text-[11px] text-muted-foreground group-data-[collapsible=icon]:hidden">
         <div>v1.0.0 · Responsible AI</div>
-        <div className="opacity-70">© AI Workplace</div>
+        <div className="opacity-70">© Tumie's Collections</div>
       </SidebarFooter>
     </Sidebar>
   );
