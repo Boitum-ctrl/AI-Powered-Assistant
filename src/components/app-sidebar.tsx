@@ -11,6 +11,7 @@ import {
   Settings,
   HelpCircle,
 } from "lucide-react";
+import logoUrl from "@/assets/tumies-logo.png";
 import {
   Sidebar,
   SidebarContent,
