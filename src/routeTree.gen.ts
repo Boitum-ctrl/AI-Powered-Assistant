@@ -13,6 +13,7 @@ import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as ResearchRouteImport } from './routes/research'
 import { Route as PromptsRouteImport } from './routes/prompts'
 import { Route as PlannerRouteImport } from './routes/planner'
+import { Route as OrdersRouteImport } from './routes/orders'
 import { Route as NotesRouteImport } from './routes/notes'
 import { Route as HistoryRouteImport } from './routes/history'
 import { Route as HelpRouteImport } from './routes/help'
@@ -38,6 +39,11 @@ const PromptsRoute = PromptsRouteImport.update({
 const PlannerRoute = PlannerRouteImport.update({
   id: '/planner',
   path: '/planner',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OrdersRoute = OrdersRouteImport.update({
+  id: '/orders',
+  path: '/orders',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NotesRoute = NotesRouteImport.update({
@@ -78,6 +84,7 @@ export interface FileRoutesByFullPath {
   '/help': typeof HelpRoute
   '/history': typeof HistoryRoute
   '/notes': typeof NotesRoute
+  '/orders': typeof OrdersRoute
   '/planner': typeof PlannerRoute
   '/prompts': typeof PromptsRoute
   '/research': typeof ResearchRoute
@@ -90,6 +97,7 @@ export interface FileRoutesByTo {
   '/help': typeof HelpRoute
   '/history': typeof HistoryRoute
   '/notes': typeof NotesRoute
+  '/orders': typeof OrdersRoute
   '/planner': typeof PlannerRoute
   '/prompts': typeof PromptsRoute
   '/research': typeof ResearchRoute
@@ -103,6 +111,7 @@ export interface FileRoutesById {
   '/help': typeof HelpRoute
   '/history': typeof HistoryRoute
   '/notes': typeof NotesRoute
+  '/orders': typeof OrdersRoute
   '/planner': typeof PlannerRoute
   '/prompts': typeof PromptsRoute
   '/research': typeof ResearchRoute
@@ -117,6 +126,7 @@ export interface FileRouteTypes {
     | '/help'
     | '/history'
     | '/notes'
+    | '/orders'
     | '/planner'
     | '/prompts'
     | '/research'
@@ -129,6 +139,7 @@ export interface FileRouteTypes {
     | '/help'
     | '/history'
     | '/notes'
+    | '/orders'
     | '/planner'
     | '/prompts'
     | '/research'
@@ -141,6 +152,7 @@ export interface FileRouteTypes {
     | '/help'
     | '/history'
     | '/notes'
+    | '/orders'
     | '/planner'
     | '/prompts'
     | '/research'
@@ -154,6 +166,7 @@ export interface RootRouteChildren {
   HelpRoute: typeof HelpRoute
   HistoryRoute: typeof HistoryRoute
   NotesRoute: typeof NotesRoute
+  OrdersRoute: typeof OrdersRoute
   PlannerRoute: typeof PlannerRoute
   PromptsRoute: typeof PromptsRoute
   ResearchRoute: typeof ResearchRoute
@@ -188,6 +201,13 @@ declare module '@tanstack/react-router' {
       path: '/planner'
       fullPath: '/planner'
       preLoaderRoute: typeof PlannerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/orders': {
+      id: '/orders'
+      path: '/orders'
+      fullPath: '/orders'
+      preLoaderRoute: typeof OrdersRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/notes': {
@@ -242,6 +262,7 @@ const rootRouteChildren: RootRouteChildren = {
   HelpRoute: HelpRoute,
   HistoryRoute: HistoryRoute,
   NotesRoute: NotesRoute,
+  OrdersRoute: OrdersRoute,
   PlannerRoute: PlannerRoute,
   PromptsRoute: PromptsRoute,
   ResearchRoute: ResearchRoute,
