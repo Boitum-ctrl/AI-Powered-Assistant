@@ -10,6 +10,7 @@ import {
   History,
   Settings,
   HelpCircle,
+  ShoppingBag,
 } from "lucide-react";
 import logoUrl from "@/assets/tumies-logo.png";
 import {
@@ -27,6 +28,7 @@ import {
 
 const nav = [
   { title: "Dashboard", url: "/", icon: LayoutDashboard },
+  { title: "Orders & Payments", url: "/orders", icon: ShoppingBag },
   { title: "Smart Email", url: "/email", icon: Mail },
   { title: "Meeting Notes", url: "/notes", icon: FileText },
   { title: "Task Planner", url: "/planner", icon: CalendarCheck },
